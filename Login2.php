@@ -50,6 +50,9 @@ if($_POST)
      if (password_verify($p, $r["Password"]))
      {
         echo 'Password Verified!';
+        session_start();
+        $_SESIION['username']=$id;
+        $_SESSION['loggedin']=true;
      }
      else
      {

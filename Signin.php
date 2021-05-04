@@ -15,7 +15,7 @@ h2{ color:Black;}
 
 
 table, th, td {
-	
+
   border-collapse: collapse;
   background-color:white;
   height:250px;
@@ -24,15 +24,13 @@ table, th, td {
   opacity:1;
   border: 2px solid black;
   align:center;
-  
+
   font-weight: bold;
   color: #000000;
-  
+
 }
 
-
-
-</style>	 
+</style>
 </head>
 <body bgcolor= "pink">
 <center><h1><i>Log In</i></h1>
@@ -42,10 +40,10 @@ table, th, td {
 <td>
 
 Email Id:<h7>*</h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="text" name="id" required><br><br>
+<input type="text" class="form-control form-control" name="id" required><br><br>
 
 Enter Password:<h7>*</h7> &nbsp;
-<input type="password" name="password" required><br><br><br><br><br>
+<input type="password" class="form-control form-control" name="password" required><br><br><br><br><br>
 
 
 <center>
@@ -60,7 +58,3 @@ Enter Password:<h7>*</h7> &nbsp;
 
 </body>
 </html>
-
-
- 
-
