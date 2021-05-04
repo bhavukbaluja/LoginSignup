@@ -24,15 +24,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
-
 .container input {
-  /* position: absolute; */
   opacity: 0;
   cursor: pointer;
-
-
 }
 
 /* Create a custom radio button */
@@ -42,7 +37,7 @@
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #eee;
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -74,18 +69,29 @@
 	border-radius: 50%;
 	background: white;
 }
-h1{font-family:Cambria; font-size:50px; color:red; }
+h1{font-family:Cambria; font-size:50px; color:#003399; }
 h3{font-size:25px; }
 h6{font-size:18px; color:orange;}
 h7{ color:red;}
 h2{ color:Black;}
-
+a:link, a:visited {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.jumbotron{
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  width: 95%;
+  border-radius: 4px;
+  padding-top: 23px;
+}
 </style>
 
 <body bgcolor= "pink">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-  <!-- style="background-color: #004d99;" -->
-  <a class="navbar-brand" align="center" href="#">ATS</a>
+  <a class="navbar-brand">ATS</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -98,49 +104,30 @@ h2{ color:Black;}
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="Contactus.php">Contact Us</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
-<center><h1><i>Sign Up</i></h1>
+<center>
+  <div class="jumbotron">
+  <div class="btn-group btn-group-lg ">
+  <button type="button" class="btn btn-secondary"><a href="Signuppage.php"><u>Register</u></a></button>
+  <button type="button" class="btn btn-primary"><a href="signin.php">Sign in</a></button>
+</div>
+<h1><i><b>Register</b></i></h1>
 <form method="post" action="connection.php">
 <table>
 <tr>
 <td>
-<center><h2> Enter Your Details:</h2></center>
-
-<!-- <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text">Person</span>
-    </div>
-    <input type="text" class="form-control" placeholder="First Name">
-    <input type="text" class="form-control" placeholder="Last Name">
-  </div> -->
 Name:<h7>*</h7>
 <input type="text" class="form-control form-control" placeholder="First Name" name="fname" required>
 <input type="text" class="form-control form-control" placeholder="Last Name" name="lname" required><br>
 
 Contact Number:<h7>*</h7>&nbsp;
-<input type="number" class="form-control form-control" name="no" required><br>
+<input type="number" class="form-control form-control" placeholder="Contact no." name="no" required><br>
 
 Gender:<h7>*</h7>&nbsp;<br>
 <label  class="container">Male
@@ -158,22 +145,22 @@ Gender:<h7>*</h7>&nbsp;<br>
 <br>
 
 Email Id:<h7>*</h7>&nbsp;
-<input type="text" class="form-control form-control" name="id" required><br>
+<input type="text" class="form-control form-control" placeholder="Email Address" name="id" required><br>
 
 Choose Password:<h7>*</h7> &nbsp;
-<input type="password" class="form-control form-control" name="password1" required><br>
+<input type="password" class="form-control form-control" placeholder="Password" name="password1" required><br>
 
 Corfirm Password:<h7>*</h7>
-<input type="password" class="form-control form-control" name="password2" required><br>
+<input type="password" class="form-control form-control" placeholder="Confirm Password" name="password2" required><br>
 
 Date of Birth:<h7>*</h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="date" name="date" required> &nbsp;&nbsp;
+<input type="date" name="date" placeholder="DD-MM-YYYY" required> &nbsp;&nbsp;
 <br><br>
-
+</div>
 <center>
 <button type="submit" class="btn btn-primary" >Create Account</button><br><br>
 </form>
-<a href="signin.php">Already have an Account? Login</a><br>
+<br>
 </center>
 </td>
 </tr>
