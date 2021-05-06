@@ -120,7 +120,7 @@ h9{
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <li class="nav-item active color:blue">
-        <a class="nav-link" href="index.php"><h8>Home</h8></a>
+        <a class="nav-link" href="index.php"><h9><b>Home<span class="sr-only">(current)</span></b></h9> </a>
       </li>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -138,65 +138,45 @@ h9{
 
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="Signuppage.php"><h9><b>Register/Signup</b></h9></a>
-          <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+        <a class="nav-link" href="Signuppage.php"><h6>Register/Signup</h6></a>
       </li>
     </ul>
   </div>
 </nav>
 
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <!-- <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul> -->
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg" alt="Los Angeles">
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 <center>
-  <div class="jumbotron">
-  <div class="btn-group btn-group-lg ">
-  <button type="button" class="btn btn-secondary"><a href="Signuppage.php"><u>Register</u></a></button>
-  <button type="button" class="btn btn-primary"><a href="signin.php">Sign in</a></button>
-</div>
-<h1><i><b>Register</b></i></h1>
-<form method="post" action="connection.php">
-<table>
-<tr>
-<td>
-Name:<h7>*</h7>
-<input type="text" class="form-control form-control" placeholder="First Name" name="fname" required>
-<input type="text" class="form-control form-control" placeholder="Last Name" name="lname" required><br>
-
-Contact Number:<h7>*</h7>&nbsp;
-<input type="number" class="form-control form-control" placeholder="Contact no." name="no" required><br>
-
-Gender:<h7>*</h7>&nbsp;<br>
-<label  class="container">Male
-  <input type="radio" name="Gender" value="Male" required>
-  <span class="checkmark"></span>
-</label>
-<label class="container">Female
-  <input type="radio" name="Gender" value="Female">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Others
-  <input type="radio" name="Gender" value="Others">
-  <span class="checkmark"></span>
-</label>
 <br>
-
-Email Id:<h7>*</h7>&nbsp;
-<input type="text" class="form-control form-control" placeholder="Email Address" name="id" required><br>
-
-Choose Password:<h7>*</h7> &nbsp;
-<input type="password" class="form-control form-control" placeholder="Password" name="password1" required><br>
-
-Corfirm Password:<h7>*</h7>
-<input type="password" class="form-control form-control" placeholder="Confirm Password" name="password2" required><br>
-
-Date of Birth:<h7>*</h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<input type="date" name="date" placeholder="DD-MM-YYYY" required> &nbsp;&nbsp;
-<br><br>
-</div>
-<center><br>
-<button type="submit" class="btn btn-primary" >Create Account</button><br><br>
-</form>
 </center>
-</td>
-</tr>
-</table>
 </body>
 </html>

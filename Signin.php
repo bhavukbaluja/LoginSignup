@@ -128,8 +128,9 @@ a:link, a:visited {
 
 	Choose Password:<h7>*</h7> &nbsp;
 	<input type="password" class="form-control form-control-lg" placeholder="Password" name="password" required><br>
-
+<center>
 <button type="submit" class="btn btn-primary" >Sign in</button><br><br>
+<center>
 </form>
 <br>
 </div>
